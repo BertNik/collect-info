@@ -1,0 +1,37 @@
+<html>
+<head></head>
+<body>
+<div>
+Hello World
+<script>
+
+var load = ()=>{
+
+                   // console.log('window loaded')
+                    var ci = window.clientInformation;
+                    var a = [];
+                    for (i in ci) {
+                        c = {};
+                        c['name'] = i;
+                        c['value'] = ci[i];
+                        a.push(c)
+                    }
+                    window._a = a;
+
+                    var reqListener = (a,b,c)=>{
+                       // console.log(a.target.responseText);
+
+                    }
+                    var req = new XMLHttpRequest();
+                    req.addEventListener("load", reqListener);
+
+                    req.open("GET", window.location.href + "ci.php/?ci=" + JSON.stringify(a));
+                    req.send();
+
+                }
+
+                window.onload = load;
+</script>
+</div>
+</body>
+</html>
