@@ -6,6 +6,8 @@ $ git clone git@github.com:BertNik/collect-info.git
 
 $ cd collect-info
 
+$ npm install
+
 $ php -S localhost:[port#] (starts dev web server http://php.net/manual/en/features.commandline.webserver.php)
 
 Then, request http://localhost:[port#]
