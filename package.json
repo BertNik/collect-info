@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "build": "babel script-src/ --watch --out-dir script/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "name": "collect-info",
+  "description": "collects browser info via get parameters in js with corresponding PHP script that logs the data to a file.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BertNik/collect-info.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BertNik/collect-info/issues"
+  },
+  "homepage": "https://github.com/BertNik/collect-info#readme"
+}
